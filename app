@@ -7,3 +7,9 @@
 
 "new-version":"lerna version --conventional-commits --yes",
 "n-v":"lerna version --conventional-commits --yes"
+
+--ignore-changes
+--create-release
+
+npx lerna version --conventional-commits --ignore-changes
+npx lerna version --conventional-commits --create-release github
