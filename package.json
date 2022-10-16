@@ -1,0 +1,21 @@
+{
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "app1",
+      "app2",
+      "app3"
+    ]
+  },
+  "scripts": {
+    "ap": "lerna run ap --ignore={@nested/app2,@nested/app1}",
+    "start": "lerna run start --parallel",
+    "build": "lerna run build",
+    "serve": "lerna run --parallel serve",
+    "clean": "lerna run --parallel clean",
+    "n-v":"lerna version --conventional-commits --yes"
+  },
+  "devDependencies": {
+    "lerna": "3.22.1"
+  }
+}
